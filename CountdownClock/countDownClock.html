@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,10 +25,10 @@
                 <a class="nav-link" href="../index.html">Welcome</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="numberGuessingGame.html">Number guessing game</a>
+                <a class="nav-link" href="../NumberGuessingGame/numberGuessingGame.html">Number guessing game</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../CountdownClock/countDownClock.html">Countdown Clock</a>
+                <a class="nav-link active" href="./CountdownClock/countDownClock.html">Countdown Clock</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#drumkit">Drumkit</a>
@@ -33,25 +36,28 @@
         </ul>
 
         <!--Content-->
-        <h3 class="page-title">NUMBER GUESSING GAME</h3>
-        <h4>Rules:</h4>
-        <ul>
-            <li>Try and guess a random number between 1 and 100.</li>
-            <li>You have 10 attempts to guess the right number.</li>
-        </ul>
-        </br>
-        <form class="form">
-            <div class="form-group">
-                <label for="email" id="guessing-field-label"><b>Your guess</b></label>
-                <input type="number" class="form-control" id="guessField" placeholder="Enter your guess" name="email">
+        <h3 class="page-title">COUNTDOWN CLOCK</h3>
+        <div class="row" id="clockdiv">
+            <div class="col-sm-2 clock-field">
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
             </div>
-            <button type="submit" class="btn btn-primary" id="submit-button">Submit guess</button>
-        </form>
-
-        <div class="result-paras">
-            <p>Previous Guesses: <span class="guesses"></span></p>
-            <p>Guesses Remaining: <span class="lastResult">10</span></p>
-            <div class="low-or-high"></div>
+            <div class="col-sm-1"></div>
+            <div class=" col-sm-2 clock-field">
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class=" col-sm-2 clock-field">
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class=" col-sm-2 clock-field">
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+            </div>
+            <div class="col-sm-1"></div>
         </div>
     </div>
 
